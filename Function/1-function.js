@@ -1,14 +1,30 @@
 'use strict'
 
+// function declaration
+/*
+ если сделать такое объявление функции,
+ то он будет виден во всех частях этого файла.
+
+*/
 function inc(a) {
   return a + 1;
 }
 
+// function expresion
+/*
+будет видна после того как присловили переменную.
+*/
 const sum = function(a, b) {
   return a + b;
 };
 
+// lambda expresion
+/*
+return не используется
+функция доходит до return и выходит 
+*/
 const max = (a, b) => (a > b ? a : b);
+
 const avg = (a, b) => {
   const s = sum(a, b);
     return s / 2;
